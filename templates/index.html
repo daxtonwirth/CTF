@@ -3,11 +3,17 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
+<div class="container py-5">
+
 {% if user.is_authenticated %}
   Hi {{ user.username }}!
   <p><a href="{% url 'logout' %}">Log Out</a></p>
 {% else %}
+<div class="text-center">
   <p>You are not logged in</p>
   <a href="{% url 'login' %}">Log In</a>
+  <p>If you dont have an account, <a href="/register">register</a> instead.</p>
+</div>  
 {% endif %}
+</div>
 {% endblock %}
