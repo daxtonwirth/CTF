@@ -10,11 +10,13 @@ I wrote this software to learn the basics of Django and build my first CTF websi
 
 /
 /login
+/register
 
 # Development Environment
 
 Django
 Visual Studio Code
+pip install django-crispy-forms
 
 # Useful Websites
 
